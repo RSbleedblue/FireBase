@@ -16,7 +16,7 @@ const Register = () => {
         try {
             await createUserWithEmailAndPassword(auth, email, password);
             toast.success("User Registered Successfully");
-            navigate("/login")
+            navigate("/")
         } catch (error) {
             setError(error.message);
         }
